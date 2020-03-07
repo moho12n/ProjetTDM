@@ -125,16 +125,18 @@ class MedecinTraitantActivity : AppCompatActivity() , NavigationView.OnNavigatio
             R.id.list_medecin_traitant_id -> {
                 val intent = Intent(this, MedecinTraitantActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(this, "MAin activity", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "List Medecin Traitant", Toast.LENGTH_SHORT).show()
             }
             R.id.rendez_vous_id -> {
-                Toast.makeText(this, "Messages clicked", Toast.LENGTH_SHORT).show()
+                val intentrdv = Intent(this, AjouterRdvActivity::class.java)
+                startActivity(intentrdv)
+                Toast.makeText(this, "Rendez Vous", Toast.LENGTH_SHORT).show()
             }
             R.id.suivi_id -> {
-                Toast.makeText(this, "Friends clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Suivi", Toast.LENGTH_SHORT).show()
             }
             R.id.aide_id -> {
-                Toast.makeText(this, "Update clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Aide", Toast.LENGTH_SHORT).show()
             }
             R.id.deconnexion_id -> {
                 Toast.makeText(this, "Sign out clicked", Toast.LENGTH_SHORT).show()

@@ -39,4 +39,8 @@ interface Endpoint {
 
     @POST("patient/demandetraitement")
     fun ajouterMedecinTraitant(@Body demande: DemandeAjout):Call<String>
+
+    @GET("getRDV/{patient}")
+    fun getRdv(@Path ("patient") isbn:String): Call<List<RendezVous>>
+
 }

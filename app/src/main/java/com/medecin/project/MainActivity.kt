@@ -22,6 +22,7 @@ import androidx.core.content.edit
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.nav_header.*
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener  {
@@ -46,6 +47,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         viewAdapter = MedecinAdapter(myDataset)
         viewManager = LinearLayoutManager(this)
 
+        val pref = this.getSharedPreferences("status"
+
+            ,Context.MODE_PRIVATE)
+        //if(pref.getString("nom","none") != null) nom_patient_id.text = pref.getString("nom","none")
         val call = RetrofitService.endpoint.getmedecin()
         call.enqueue(object: Callback<List<Medecin>> {
             override fun onResponse(call: Call<List<Medecin>>?, response:
@@ -199,7 +204,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
                 if (con) {
-
+                    val intentrdv = Intent(this, AjouterRdvActivity::class.java)
+                    startActivity(intentrdv)
                 }
                 else {Toast.makeText(this, "You have to login ", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, LoginActivity::class.java)

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/backgroundColor">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        app:hintTextColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        app:startIconDrawable="@mipmap/nss_icon_foreground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextNssSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/sign_up_nss"
+            android:inputType="number"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHighlight="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:textColorLink="@color/colorSecondary"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        app:hintTextColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:startIconDrawable="@mipmap/adress_icon_foreground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextAdressSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/sign_up_adress"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHighlight="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:textColorLink="@color/colorSecondary"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        app:hintTextColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381"
+        app:startIconDrawable="@mipmap/prenom_icon_foreground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextPrenomSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/sign_up_prenom"
+            android:inputType="textPersonName"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHighlight="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:textColorLink="@color/colorSecondary"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout8"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        app:hintTextColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614"
+        app:startIconDrawable="@mipmap/phone_icon_foreground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextPhoneSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/sign_up_phone"
+            android:inputType="number"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHighlight="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:textColorLink="@color/colorSecondary"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        app:hintTextColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281"
+        app:startIconDrawable="@mipmap/name_icon_foreground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextNomSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/sign_up_nom"
+            android:inputType="textPersonName"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHighlight="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:textColorLink="@color/colorSecondary"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsignup"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="signup "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
+</androidx.constraintlayout.widget.ConstraintLayout>

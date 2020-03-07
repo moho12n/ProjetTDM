@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/design_default_color_secondary_variant"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@mipmap/user_icon_foreground" />
+
+    <TextView
+        android:id="@+id/nom_patient_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veuillez vous connecter"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

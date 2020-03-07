@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/list_medecins_recherche"
+            android:icon="@mipmap/doctor_pic_foreground"
+            android:title="Liste Medecins" />
+        <item
+            android:id="@+id/list_medecin_traitant_id"
+            android:icon="@mipmap/name_icon_foreground"
+            android:title="Liste Medecins Traitants" />
+        <item
+            android:id="@+id/rendez_vous_id"
+            android:icon="@mipmap/person_icon_foreground"
+            android:title="Rendez-vous" />
+        <item
+            android:id="@+id/suivi_id"
+            android:icon="@mipmap/phone_icon_foreground"
+            android:title="Suivi" />
+    </group>
+
+
+    <item android:title="Profil">
+        <menu>
+            <item
+                android:id="@+id/aide_id"
+                android:icon="@mipmap/search_icon_foreground"
+                android:title="Aide " />
+            <item
+                android:id="@+id/deconnexion_id"
+                android:icon="@mipmap/person_icon_foreground"
+                android:title="Deconnexion" />
+        </menu>
+    </item>
+</menu>
